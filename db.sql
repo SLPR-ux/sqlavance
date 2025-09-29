@@ -27,6 +27,7 @@ CREATE TABLE `lignecommande` (
   quantite int(11) NOT NULL,
   PRIMARY KEY (idLigneCommande),
   FOREIGN KEY (idCommande) REFERENCES commande(idCommande)
+    FOREIGN KEY (idArticle) REFERENCES article(idArticle)
 );
 
 CREATE TABLE `article` (
