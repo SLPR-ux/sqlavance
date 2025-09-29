@@ -31,8 +31,7 @@ CREATE TABLE `lignecommande` (
 
 CREATE TABLE `article` (
   idArticle BIGINT PRIMARY KEY AUTO_INCREMENT,
-  nom varchar(255) NOT NULL,
-  description text,
-  prix decimal(10,2) NOT NULL,
+  libelle varchar(255) NOT NULL,
+  prixUnitaire decimal(10,2) NOT NULL,
   stock int(11) NOT NULL
 );
